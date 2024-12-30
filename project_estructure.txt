@@ -1,0 +1,29 @@
+project/
+├── src/                         # Código fuente
+│   ├── app.py                   # Archivo principal
+│   ├── config.py                # Configuración específica para el código
+│   ├── task_manager.py          # Módulo para manejar tareas
+│
+├── data/                        # Archivos de datos
+│   ├── tareas.json              # Almacenamiento de tareas
+│   ├── dummy_data.json          # Datos de ejemplo
+│
+├── logs/                        # Logs generados por la aplicación
+│   ├── app.log
+│   ├── error.log
+│
+├── config/                      # Configuración del proyecto
+│   ├── .env                     # Configuración del entorno (sensibles)
+│   ├── .env.example             # Plantilla para configurar el entorno
+│   ├── settings.json            # Configuración adicional en formato JSON
+│
+├── tests/                       # Pruebas unitarias
+│   ├── test_task_manager.py
+│
+├── docs/                        # Documentación
+│   ├── README.md                # Documentación principal
+│   ├── index.md
+│
+├── requirements.txt             # Dependencias del proyecto
+├── README.md                    # Documentación general del proyecto
+├── setup.py                     # Configuración para empaquetar el proyecto (si es necesario)

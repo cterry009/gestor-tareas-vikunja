@@ -1,0 +1,62 @@
+[
+    {
+        "nombre": "asd",
+        "conocimiento": 1,
+        "recursos": 1,
+        "dependencia": 1,
+        "estres": 1,
+        "riesgo": 1,
+        "dificultad_total": 0,
+        "energia": 1,
+        "tiempo_estimado": 1.0,
+        "tiempo_real": ""
+    },
+    {
+        "nombre": "asd",
+        "conocimiento": 1,
+        "recursos": 1,
+        "dependencia": 1,
+        "estres": 1,
+        "riesgo": 1,
+        "dificultad_total": 0,
+        "energia": 1,
+        "tiempo_estimado": 1.0,
+        "tiempo_real": ""
+    },
+    {
+        "nombre": "asd",
+        "conocimiento": 1,
+        "recursos": 1,
+        "dependencia": 1,
+        "estres": 1,
+        "riesgo": 1,
+        "dificultad_total": 0,
+        "energia": 1,
+        "tiempo_estimado": 1.0,
+        "tiempo_real": 0.0
+    },
+    {
+        "nombre": "12",
+        "conocimiento": 1,
+        "recursos": 1,
+        "dependencia": 1,
+        "estres": 1,
+        "riesgo": 1,
+        "dificultad_total": 0,
+        "energia": 1,
+        "tiempo_estimado": 1.0,
+        "tiempo_real": 0
+    },
+    {
+        "nombre": "asd",
+        "conocimiento": 1,
+        "recursos": 1,
+        "dependencia": 1,
+        "estres": 1,
+        "riesgo": 1,
+        "dificultad_total": 1,
+        "energia": 1,
+        "tiempo_estimado": 1.0,
+        "tiempo_real": 0
+    }
+]

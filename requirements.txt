@@ -1,0 +1,6 @@
+gkeepapi                # Google Keep API
+python-dotenv           # Load environment variables from .env file
+pytest                  # Testing framework
+pytest-cov              # Coverage plugin for pytest
+keyring                 # Secure password storage
+logging                 # Logging module
