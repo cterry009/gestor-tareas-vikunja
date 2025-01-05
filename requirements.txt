@@ -4,3 +4,4 @@ pytest                  # Testing framework
 pytest-cov              # Coverage plugin for pytest
 keyring                 # Secure password storage
 logging                 # Logging module
+black                   # Code formatter
