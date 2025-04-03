@@ -1,0 +1,7 @@
+database:
+  name: task.db
+  user: admin
+  password: secret
+vikunja:
+  api_url: "http://localhost:3456"
+  token: "abc123"

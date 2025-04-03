@@ -1,0 +1,9 @@
+setup.py
+src/gestor_tareas_vikunja.egg-info/PKG-INFO
+src/gestor_tareas_vikunja.egg-info/SOURCES.txt
+src/gestor_tareas_vikunja.egg-info/dependency_links.txt
+src/gestor_tareas_vikunja.egg-info/requires.txt
+src/gestor_tareas_vikunja.egg-info/top_level.txt
+src/screens/__init__.py
+src/screens/login_screen.py
+src/screens/task_screen.py

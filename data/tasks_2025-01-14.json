@@ -1,0 +1,74 @@
+[
+    {
+        "nombre": "qwe",
+        "conocimiento": 1.0,
+        "recursos": 1.0,
+        "dependencia": 1.0,
+        "estres": 1.0,
+        "riesgo": 1.0,
+        "dificultad_total": 5.0,
+        "tiempo_estimado": 1.0,
+        "tiempo_real": 0.0,
+        "completada": false
+    },
+    {
+        "nombre": "123",
+        "conocimiento": 1.0,
+        "recursos": 1.0,
+        "dependencia": 1.0,
+        "estres": 1.0,
+        "riesgo": 1.0,
+        "dificultad_total": 5.0,
+        "tiempo_estimado": 1.0,
+        "tiempo_real": 0.0,
+        "completada": false
+    },
+    {
+        "nombre": "wq",
+        "conocimiento": 1.0,
+        "recursos": 1.0,
+        "dependencia": 1.0,
+        "estres": 1.0,
+        "riesgo": 1.0,
+        "dificultad_total": 5.0,
+        "tiempo_estimado": 1.0,
+        "tiempo_real": 0.0,
+        "completada": false
+    },
+    {
+        "nombre": "1",
+        "conocimiento": 1.0,
+        "recursos": 1.0,
+        "dependencia": 1.0,
+        "estres": 1.0,
+        "riesgo": 1.0,
+        "dificultad_total": 5.0,
+        "tiempo_estimado": 1.0,
+        "tiempo_real": 0.0,
+        "completada": false
+    },
+    {
+        "nombre": "qwe",
+        "conocimiento": 1.0,
+        "recursos": 1.0,
+        "dependencia": 1.0,
+        "estres": 1.0,
+        "riesgo": 1.0,
+        "dificultad_total": 5.0,
+        "tiempo_estimado": 1.0,
+        "tiempo_real": 0.0,
+        "completada": false
+    },
+    {
+        "nombre": "qw",
+        "conocimiento": 1.0,
+        "recursos": 1.0,
+        "dependencia": 1.0,
+        "estres": 1.0,
+        "riesgo": 1.0,
+        "dificultad_total": 5.0,
+        "tiempo_estimado": 1.0,
+        "tiempo_real": 0.0,
+        "completada": false
+    }
+]

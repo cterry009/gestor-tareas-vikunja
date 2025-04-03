@@ -1,7 +1,9 @@
-gkeepapi                # Google Keep API
-python-dotenv           # Load environment variables from .env file
-pytest                  # Testing framework
-pytest-cov              # Coverage plugin for pytest
-keyring                 # Secure password storage
-logging                 # Logging module
-black                   # Code formatter
+kivy>=2.1.0              # Framework para interfaces gráficas
+kivymd==1.1.1            # Componentes con Material Design
+requests==2.28.1         # Peticiones HTTP
+sqlalchemy==1.4.44       # Object-Relational Mapping" (Mapeo Objeto-Relacional)  para SQLite
+setuptools               # Package management
+pillow                   # Manipulación de imágenes
+pyyaml                   # Manipulación de yamls
+watchdog                 # Monitoreo de archivos
+# pyinstaller==5.7        # Creación de ejecutables

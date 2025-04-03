@@ -1,0 +1,2 @@
+# Comando para lanzar el servicio de vikunja
+docker run -p 3456:3456   -e VIKUNJA_DATABASE_TYPE=sqlite   -e VIKUNJA_DATABASE_PATH=/db/vikunja.db   -v $PWD/db:/db   -v $PWD/files:/app/vikunja/files   vikunja/vikunja

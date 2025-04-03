@@ -1,0 +1,5 @@
+development:
+  auto_login: true
+  credentials:
+    username: "Cristo"
+    password: "Cristo123."

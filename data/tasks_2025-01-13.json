@@ -1,0 +1,38 @@
+[
+    {
+        "nombre": "qw",
+        "conocimiento": 1.0,
+        "recursos": 1.0,
+        "dependencia": 1.0,
+        "estres": 1.0,
+        "riesgo": 1.0,
+        "dificultad_total": 5.0,
+        "tiempo_estimado": 1.0,
+        "tiempo_real": 0.0,
+        "completada": true
+    },
+    {
+        "nombre": "123",
+        "conocimiento": 1.0,
+        "recursos": 1.0,
+        "dependencia": 1.0,
+        "estres": 1.0,
+        "riesgo": 1.0,
+        "dificultad_total": 5.0,
+        "tiempo_estimado": 1.0,
+        "tiempo_real": 0.0,
+        "completada": false
+    },
+    {
+        "nombre": "34",
+        "conocimiento": 1.0,
+        "recursos": 1.0,
+        "dependencia": 2.0,
+        "estres": 2.0,
+        "riesgo": 2.0,
+        "dificultad_total": 8.0,
+        "tiempo_estimado": 2.0,
+        "tiempo_real": 0.0,
+        "completada": false
+    }
+]

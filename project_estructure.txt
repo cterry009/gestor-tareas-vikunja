@@ -1,29 +1,27 @@
-project/
-├── src/                         # Código fuente
-│   ├── app.py                   # Archivo principal
-│   ├── config.py                # Configuración específica para el código
-│   ├── task_manager.py          # Módulo para manejar tareas
-│
-├── data/                        # Archivos de datos
-│   ├── tareas.json              # Almacenamiento de tareas
-│   ├── dummy_data.json          # Datos de ejemplo
-│
-├── logs/                        # Logs generados por la aplicación
-│   ├── app.log
-│   ├── error.log
-│
-├── config/                      # Configuración del proyecto
-│   ├── .env                     # Configuración del entorno (sensibles)
-│   ├── .env.example             # Plantilla para configurar el entorno
-│   ├── settings.json            # Configuración adicional en formato JSON
-│
-├── tests/                       # Pruebas unitarias
-│   ├── test_task_manager.py
-│
-├── docs/                        # Documentación
-│   ├── README.md                # Documentación principal
-│   ├── index.md
-│
-├── requirements.txt             # Dependencias del proyecto
-├── README.md                    # Documentación general del proyecto
-├── setup.py                     # Configuración para empaquetar el proyecto (si es necesario)
+Gestor de Tareas Vikunja/
+├─ config/
+│   └─ configuraciones.json   # Configs generales de la app
+├─ data/
+│   ├─ tareas.json           # Ejemplos en JSON (si usas, o si no usas Vikunja)
+│   ├─ tareas-YYYY-MM-DD.json # Respaldos o históricos
+│   └─ ...
+├─ docs/
+│   ├─ guide.md
+│   └─ index.md
+├─ env/
+├─ logs/
+├─ src/
+│   ├─ screens/
+│   │   ├─ login_screen.py    # Pantalla de Login con KivyMD
+│   │   ├─ task_screen.py     # Pantalla de Tareas (KivyMD + MDDataTable)
+│   │   └─ ...
+│   ├─ vikunja_api.py         # Módulo que conecta con la API de Vikunja
+│   ├─ local_db.py            # Módulo para SQLite u otro DB local
+│   ├─ tasks.py               # Clase Tarea, con to_dict y from_dict
+│   ├─ main.py                # Punto de entrada principal (MDApp)
+│   └─ ...
+├─ .gitignore
+├─ project_estructure.txt
+├─ Readme.txt
+├─ requirements.txt
+└─ setup.py

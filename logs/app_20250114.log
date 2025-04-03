@@ -1,0 +1,62 @@
+2025-01-14 13:39:35,255 - INFO - main - Argumentos disponibles:
+2025-01-14 13:39:35,256 - INFO - main -   --dev          : Activa el modo desarrollo
+2025-01-14 13:39:35,257 - INFO - main -   --reload       : Activa el auto-reload
+2025-01-14 13:39:35,258 - INFO - main - Argumentos recibidos: ['.\\src\\main.py']
+2025-01-14 13:39:35,259 - INFO - main - Modo desarrollo: desactivado
+2025-01-14 13:39:35,259 - INFO - main - Auto-reload: desactivado
+2025-01-14 13:39:35,262 - INFO - main - Monitoring directory: D:\Personal\Area de Trabajo\Herramientas_de_Desarrollo\Python\Utilidades\Gestor de tareas vikunja\src
+2025-01-14 13:39:35,263 - INFO - vikunja_api - VikunjaAPI initialized with base_url: http://localhost:3456
+2025-01-14 13:39:35,694 - INFO - main - 
+Estado de la aplicación:
+2025-01-14 13:39:35,696 - INFO - main - Modo desarrollo: desactivado
+2025-01-14 13:39:35,696 - INFO - main - Auto-reload: desactivado
+2025-01-14 13:40:02,830 - INFO - main - Argumentos disponibles:
+2025-01-14 13:40:02,831 - INFO - main -   --dev          : Activa el modo desarrollo
+2025-01-14 13:40:02,832 - INFO - main -   --reload       : Activa el auto-reload
+2025-01-14 13:40:02,832 - INFO - main - Argumentos recibidos: ['.\\src\\main.py', '--dev', '--reload']
+2025-01-14 13:40:02,833 - INFO - main - Modo desarrollo: activado
+2025-01-14 13:40:02,833 - INFO - main - Auto-reload: activado
+2025-01-14 13:40:02,835 - INFO - main - Monitoring directory: D:\Personal\Area de Trabajo\Herramientas_de_Desarrollo\Python\Utilidades\Gestor de tareas vikunja\src
+2025-01-14 13:40:02,837 - INFO - vikunja_api - VikunjaAPI initialized with base_url: http://localhost:3456
+2025-01-14 13:40:03,052 - INFO - vikunja_api - Attempting login for user: Cristo
+2025-01-14 13:40:03,054 - INFO - main - 
+Estado de la aplicación:
+2025-01-14 13:40:03,057 - INFO - main - Modo desarrollo: activado
+2025-01-14 13:40:03,058 - INFO - main - Auto-reload: activado
+2025-01-14 13:40:07,165 - ERROR - vikunja_api - Connection error during login: HTTPConnectionPool(host='localhost', port=3456): Max retries exceeded with url: /login (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F4A4E1D210>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-01-14 13:42:45,361 - INFO - main - Argumentos disponibles:
+2025-01-14 13:42:45,362 - INFO - main -   --dev          : Activa el modo desarrollo
+2025-01-14 13:42:45,364 - INFO - main -   --reload       : Activa el auto-reload
+2025-01-14 13:42:45,364 - INFO - main - Argumentos recibidos: ['.\\src\\main.py', '--dev', '--reload']
+2025-01-14 13:42:45,365 - INFO - main - Modo desarrollo: activado
+2025-01-14 13:42:45,366 - INFO - main - Auto-reload: activado
+2025-01-14 13:42:45,368 - INFO - main - Monitoring directory: D:\Personal\Area de Trabajo\Herramientas_de_Desarrollo\Python\Utilidades\Gestor de tareas vikunja\src
+2025-01-14 13:42:45,370 - INFO - vikunja_api - VikunjaAPI initialized with base_url: http://localhost:3456
+2025-01-14 13:42:45,731 - INFO - vikunja_api - Attempting login for user: Cristo
+2025-01-14 13:42:45,733 - INFO - main - 
+Estado de la aplicación:
+2025-01-14 13:42:45,734 - INFO - main - Modo desarrollo: activado
+2025-01-14 13:42:45,735 - INFO - main - Auto-reload: activado
+2025-01-14 13:42:45,793 - INFO - vikunja_api - Login successful for user: Cristo
+2025-01-14 13:42:45,795 - DEBUG - vikunja_api - No JSON response, but login successful
+2025-01-14 13:46:09,474 - INFO - main - Archivo modificado: D:\Personal\Area de Trabajo\Herramientas_de_Desarrollo\Python\Utilidades\Gestor de tareas vikunja\src\screens\task_screen_ui.py
+2025-01-14 13:46:09,475 - INFO - main - Reiniciando aplicación...
+2025-01-14 13:46:12,620 - INFO - main - Archivo modificado: D:\Personal\Area de Trabajo\Herramientas_de_Desarrollo\Python\Utilidades\Gestor de tareas vikunja\src\screens\task_screen_ui.py
+2025-01-14 13:46:12,622 - INFO - main - Reiniciando aplicación...
+2025-01-14 13:57:27,035 - INFO - main - Archivo modificado: D:\Personal\Area de Trabajo\Herramientas_de_Desarrollo\Python\Utilidades\Gestor de tareas vikunja\src\screens\task_screen_ui.py
+2025-01-14 13:57:27,037 - INFO - main - Reiniciando aplicación...
+2025-01-14 14:01:27,437 - INFO - main - Argumentos disponibles:
+2025-01-14 14:01:27,438 - INFO - main -   --dev          : Activa el modo desarrollo
+2025-01-14 14:01:27,439 - INFO - main -   --reload       : Activa el auto-reload
+2025-01-14 14:01:27,440 - INFO - main - Argumentos recibidos: ['.\\src\\main.py', '--dev']
+2025-01-14 14:01:27,440 - INFO - main - Modo desarrollo: activado
+2025-01-14 14:01:27,442 - INFO - main - Auto-reload: desactivado
+2025-01-14 14:01:27,445 - INFO - main - Monitoring directory: D:\Personal\Area de Trabajo\Herramientas_de_Desarrollo\Python\Utilidades\Gestor de tareas vikunja\src
+2025-01-14 14:01:27,447 - INFO - vikunja_api - VikunjaAPI initialized with base_url: http://localhost:3456
+2025-01-14 14:01:27,869 - INFO - vikunja_api - Attempting login for user: Cristo
+2025-01-14 14:01:27,871 - INFO - main - 
+Estado de la aplicación:
+2025-01-14 14:01:27,872 - INFO - main - Modo desarrollo: activado
+2025-01-14 14:01:27,873 - INFO - main - Auto-reload: desactivado
+2025-01-14 14:01:27,997 - INFO - vikunja_api - Login successful for user: Cristo
+2025-01-14 14:01:27,999 - DEBUG - vikunja_api - No JSON response, but login successful
