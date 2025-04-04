@@ -4,11 +4,15 @@
 
 - [Descripción](#descripción)
 - [Características](#características)
+- [Instalación](#instalación)
+  - [Instalación con pip](#instalación-con-pip)
+  - [Instalación desde el código fuente](#instalación-desde-el-código-fuente)
+- [Ejecución](#ejecución)
 - [Arquitectura General](#arquitectura-general)
 - [Preparar el Entorno de Vikunja](#preparar-el-entorno-de-vikunja)
 - [Estructura y Funcionalidades de la App](#estructura-y-funcionalidades-de-la-app)
 
-## Deescripción
+## Descripción
 Esta aplicación está diseñada para evaluar el nivel de dificultad de una 
 tarea junto con la energía invertida en realizarla. Su objetivo es ayudar 
 a optimizar el trabajo al identificar posibles obstáculos y priorizar las 
@@ -21,23 +25,145 @@ minimizar el estrés y los errores mientras maximizan la productividad.
 - Temporizador para medir el tiempo invertido en cada tarea.
 - Cálculo de dificultad total y eficiencia.
 - Guardado automático de tareas en un archivo JSON.
-- Interfaz gráfica sencilla y funcional con `Tkinter`.
+- Interfaz gráfica con KivyMD y Material Design.
+- Integración con Vikunja API para gestión avanzada de tareas.
 
-- Tiempo estimado: ¿Cuánto tiempo crees que te tomará completar la tarea?
-- Conocimiento especializado: ¿Requieres habilidades o conocimientos especí
-ficos que aún no dominas al 100%?
-- Recursos necesarios: ¿La tarea implica coordinación de recursos humanos, 
-materiales o tecnológicos que no tienes a mano?
-- Dependencias: ¿La finalización de la tarea depende de otras personas, 
-equipos o tareas previas?
-- Nivel de estrés o presión: ¿Es una tarea que, por su importancia o urgencia,
- te genera mayor ansiedad o presión?
-- Riesgos o posibilidad de error: ¿Implica un riesgo alto de que tengas que 
-repetir parte del trabajo si algo sale mal?
+### Métricas de evaluación de tareas
 
+- **Tiempo estimado**: ¿Cuánto tiempo crees que te tomará completar la tarea?
+- **Conocimiento especializado**: ¿Requieres habilidades o conocimientos específicos que aún no dominas al 100%?
+- **Recursos necesarios**: ¿La tarea implica coordinación de recursos humanos, materiales o tecnológicos que no tienes a mano?
+- **Dependencias**: ¿La finalización de la tarea depende de otras personas, equipos o tareas previas?
+- **Nivel de estrés o presión**: ¿Es una tarea que, por su importancia o urgencia, te genera mayor ansiedad o presión?
+- **Riesgos o posibilidad de error**: ¿Implica un riesgo alto de que tengas que repetir parte del trabajo si algo sale mal?
 
+## Instalación
 
+### Requisitos previos
+- Python 3.7 o superior
+- Pip (gestor de paquetes de Python)
+- [Opcional] Docker (para ejecutar Vikunja localmente)
 
+### Instalación con pip
+
+La forma más sencilla de instalar el gestor de tareas es directamente desde el repositorio usando pip:
+
+```bash
+# Instalar directamente desde el repositorio
+pip install git+https://github.com/tu-usuario/gestor-tareas-vikunja.git
+
+# O si tienes el código descargado localmente
+pip install .
+```
+
+### Instalación desde el código fuente
+
+1. **Clonar el repositorio o descargar el código**
+
+2. **Crear un entorno virtual (recomendado)**
+   ```bash
+   python -m venv env
+   
+   # Activar el entorno virtual
+   # En Windows:
+   env\Scripts\activate
+   # En macOS/Linux:
+   source env/bin/activate
+   ```
+
+3. **Instalar las dependencias y el paquete en modo desarrollo**
+   ```bash
+   # Instalar directamente con setup.py
+   python setup.py develop
+   
+   # O usando pip con el flag -e (editable)
+   pip install -e .
+   ```
+
+   Esto instalará el paquete en modo "editable", lo que significa que los cambios que hagas en el código se reflejarán inmediatamente sin necesidad de reinstalar.
+
+4. **Configurar la aplicación**
+   - Revisa el archivo `config/config.yaml` y ajusta los valores según tus necesidades
+   - Para desarrollo, puedes crear/modificar el archivo `config/dev_config.yaml` con credenciales de prueba
+
+### Sobre setup.py
+
+El archivo `setup.py` es un script de configuración estándar de Python que permite:
+
+- Empaquetar la aplicación como un módulo de Python
+- Definir los metadatos como nombre, versión, autor, etc.
+- Especificar las dependencias que se instalarán automáticamente
+- Facilitar la distribución e instalación de la aplicación
+
+Cuando ejecutas `python setup.py develop` o `pip install -e .`, estás instalando el paquete en modo de desarrollo, lo que crea enlaces simbólicos en lugar de copiar los archivos. Así, cualquier cambio en el código se refleja inmediatamente sin necesidad de reinstalar.
+
+## Ejecución
+
+### Iniciar la aplicación principal
+
+Una vez instalado el paquete, puedes ejecutar la aplicación con un único comando:
+
+```bash
+# Si instalaste con pip o setup.py
+gestor-vikunja
+
+# O ejecutar directamente el módulo Python
+python -m gestor_tareas_vikunja
+
+# O desde el directorio raíz del proyecto
+python src/main.py
+```
+
+### Opciones de ejecución
+
+La aplicación admite los siguientes argumentos de línea de comandos:
+
+- `--dev`: Activa el modo desarrollo que permite auto-login según `dev_config.yaml` 
+  ```bash
+  gestor-vikunja --dev
+  ```
+
+- `--reload`: Activa el auto-reload que reinicia la aplicación cuando se detectan cambios en el código
+  ```bash
+  gestor-vikunja --reload
+  ```
+
+- Combinación de opciones:
+  ```bash
+  gestor-vikunja --dev --reload
+  ```
+
+### Ejecutar Vikunja (backend) con Docker
+
+Si deseas utilizar Vikunja localmente, puedes ejecutarlo con Docker:
+
+```bash
+docker run -p 3456:3456 \
+  -e VIKUNJA_DATABASE_TYPE=sqlite \
+  -e VIKUNJA_DATABASE_PATH=/db/vikunja.db \
+  -v $PWD/db:/db \
+  -v $PWD/files:/app/vikunja/files \
+  vikunja/vikunja
+```
+
+En Windows CMD:
+```cmd
+docker run -p 3456:3456 -e VIKUNJA_DATABASE_TYPE=sqlite -e VIKUNJA_DATABASE_PATH=/db/vikunja.db -v %cd%/db:/db -v %cd%/files:/app/vikunja/files vikunja/vikunja
+```
+
+### Comando todo-en-uno (instalación y ejecución)
+
+Si quieres instalar y ejecutar la aplicación con un solo comando (útil para pruebas rápidas):
+
+```bash
+pip install git+https://github.com/tu-usuario/gestor-tareas-vikunja.git && gestor-vikunja --dev
+```
+
+O si ya tienes el código descargado:
+
+```bash
+pip install -e . && gestor-vikunja --dev
+```
 
 ## 1. Arquitectura General
 
@@ -127,3 +253,4 @@ repetir parte del trabajo si algo sale mal?
 - [Documentación de Vikunja](https://vikunja.io/docs/)
 - [Referencia de la API de Vikunja](https://vikunja.io/api/)
 - [Kivy Documentation](https://kivy.org/doc/stable/)
+- [KivyMD Documentation](https://kivymd.readthedocs.io/en/latest/)
